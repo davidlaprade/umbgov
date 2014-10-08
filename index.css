@@ -1,0 +1,18 @@
+* {
+	/*border: 2px dashed yellow;*/
+}
+
+body {
+	height: 200vh;
+}
+
+/*768px is the width of screens that bootstrap classifies as xs*/
+@media screen and (max-width: 768px) {
+
+}
+
+/*990px is the width of screens that bootstrap classifies as md*/
+/*see https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries*/
+@media screen and (max-width: 990px) { 
+
+}
