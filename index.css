@@ -11,6 +11,12 @@ body {
 	margin-top: -10px;
 }
 
+.carousel-inner img {
+	width: 100vw;
+	max-height: 75vh;
+}
+
+
 /*768px is the width of screens that bootstrap classifies as xs*/
 @media screen and (max-width: 768px) {
 
