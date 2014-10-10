@@ -6,6 +6,11 @@ body {
 	height: 200vh;
 }
 
+.navbar-brand img {
+	height: 50px;
+	margin-top: -10px;
+}
+
 /*768px is the width of screens that bootstrap classifies as xs*/
 @media screen and (max-width: 768px) {
 
