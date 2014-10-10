@@ -1,27 +1,26 @@
-* {
-	/*border: 2px dashed yellow;*/
-}
+
 
 body {
 	height: 200vh;
+	background-color: gray;
 }
 
-
-
+#carousel-example-generic {
+	margin: 0;
+	padding: 0;
+}
 .carousel-inner img {
 	width: 100vw;
-	max-height: 75vh;
+	max-height: 500px;
 }
 
+
 /*///////////////////// navbar styling ////////////////////////////////////////*/
-
-
-
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #A0CFEB;
 }
 
 .navbar-default .navbar-collapse {
@@ -56,7 +55,6 @@ body {
     letter-spacing: 1px;
 }
 
-
 .navbar-default .nav .dropdown-menu {
 	background-color: #82A2B4;
 }
@@ -86,6 +84,7 @@ body {
 
 
 .navbar-default {
+	margin: 0;
 	padding: 25px 0; /* controlls the navbar height */
     border-color: transparent;
     background-image: none;
@@ -100,7 +99,7 @@ body {
 
 .navbar-default .navbar-brand {
     font-family: 'Raleway', sans-serif;
-    color: #A0CFEB;
+    color: #fec503;
     font-size: 20px;
 }
 
@@ -141,13 +140,13 @@ body {
         font-size: 1.5em;
     }
 
-    .navbar-default .nav .dropdown-menu li {
-		color: white;
+	.navbar-default .nav .dropdown-menu {
+		background-color: white;
 	}
+
 }
 
-
-/*///////////end Gabe's navbar code///////////////////////////////////////////////////*/
+/*///////////end navbar code///////////////////////////////////////////////////*/
 
 
 /*768px is the width of screens that bootstrap classifies as xs*/
@@ -163,3 +162,6 @@ body {
 
 /*UMass Boston blue: #06466A;*/
 
+* {
+	/*border: 2px dashed yellow;*/
+}
