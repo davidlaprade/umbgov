@@ -3,9 +3,6 @@
 	<head>
 		<title>UMass Boston | Undergraduate Student Government</title>
 
-		<!-- custom CSS -->
-		<link type="text/css" rel="stylesheet" href="index.css" />
-
 		<!-- to add animations, see http://daneden.github.io/animate.css/ -->
 		<link rel="stylesheet" href="css/animate.css">
 
@@ -24,6 +21,9 @@
 		<!-- to add WOW animations -->
 		<script src="js/wow.min.js"></script>
 
+		<!-- custom CSS; load your styles last to make sure they win out if the styles for the same property are declared -->
+		<link type="text/css" rel="stylesheet" href="index.css" />
+
 	</head>
 
 	<body>
@@ -40,45 +40,51 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Brand</a>
+		      <a class="navbar-brand" href="#">UMass Boston USG</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Link</a></li>
-		        <li><a href="#">Link</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		            <li class="divider"></li>
-		            <li><a href="#">One more separated link</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		      <form class="navbar-form navbar-left" role="search">
-		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
-		        </div>
-		        <button type="submit" class="btn btn-default">Submit</button>
-		      </form>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
+		        <li class="active"><a href="index.html">Home</a></li>
 		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
 		          <ul class="dropdown-menu" role="menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
+		            <li><a href="#">About the USG</a></li>
 		            <li class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
+		            <li><a href="#">Constitution</a></li>
+		            <li><a href="#">Bylaws</a></li>
 		          </ul>
 		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Executive <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">President and Vice President</a></li>
+		            <li><a href="#">Cabinet</a></li>
+		          </ul>
+		        </li>
+		       	<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Senate <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Overview</a></li>
+		            <li><a href="#">Budget and Finance</a></li>
+		            <li><a href="#">Campus and Community Affairs</a></li>
+		            <li><a href="#">Student Events and Organization Committee</a></li>
+		            <li><a href="#">Roster</a></li>
+		          </ul>
+		        </li>
+		       	<li><a href="#">Judiciary</a></li>
+		        <li><a href="#">Elections</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Involved <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Calendar</a></li>
+		            <li><a href="#">Feedback</a></li>
+		            <li><a href="#">Volunteer</a></li>
+		            <li><a href="#">SAgroups</a></li>
+		          </ul>
+		        </li>
+		        <li><a href="#">Contact</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
