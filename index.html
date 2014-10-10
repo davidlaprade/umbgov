@@ -13,23 +13,25 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
+		<!-- add Railway font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
 		<!-- to add the jQuery library, this MUST be included before the bootstrap JS file, else the navbar won't expand -->
 		<script src="js/jquery.js"></script>
 		<!-- Latest compiled and minified JavaScript for bootstrap -->
 		<script src="js/bootstrap.min.js"></script>
-
 		<!-- to add WOW animations -->
 		<script src="js/wow.min.js"></script>
 
-		<!-- custom CSS; load your styles last to make sure they win out if the styles for the same property are declared -->
+		<!-- custom CSS; load your styles last to make sure they override other conflicting styling -->
 		<link type="text/css" rel="stylesheet" href="index.css" />
 
 	</head>
 
 	<body>
-	<!-- for the slider: http://www.jssor.com/demos/full-width-slider.html use TOUCHSWIPE SLIDER -->
+		
 			
-		<!-- navigation bar -->
+		<!-- Begin Navigation Bar code ///////////////////////////////////////////////////////////////////////////////////// -->
 		<nav class="navbar navbar-default" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,13 +42,14 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#"><img src="img/USG logo.png"/>UMass Boston USG</a>
+		      <img id="logo" src="img/USG logo.png"/>
+		      <a class="navbar-brand" href="#">UMass Boston USG</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li class="active"><a href="index.html">Home</a></li>
+		        <li><a href="index.html">Home</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
 		          <ul class="dropdown-menu" role="menu">
@@ -89,6 +92,7 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+		<!-- end navbar code //////////////////////////////////////////////////////////////////////////////// -->
 
 	<!-- Image Carousel Begin /////////////////////////////////////////////////////////////////////////// -->
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
