@@ -115,7 +115,7 @@ body {
 .navbar-nav li {
 	font-size: 12px; /*controls size of the menu icons*/
 }
-
+/*http://stackoverflow.com/questions/8878033/how-to-make-twitter-bootstrap-menu-dropdown-on-hover-rather-than-click*/
 .sidebar-nav { /* ------------------------begin code to make navbar items drop down on hover */
     padding: 9px 0;
 }
@@ -189,6 +189,9 @@ body {
 	.navbar-default .nav .dropdown-menu {
 		background-color: white; /* controls background color of dropdown menus */
 	}
+    #link-side-bar { /* hide side bar when screen is small */
+        display: none;
+    }
 
 }/*///////////end navbar code///////////////////////////////////////////////////*/
 
@@ -208,10 +211,20 @@ body {
 #footer {
 	border-top: 2px solid white;
 	color: #06466A;
-	height: 500px;
-	height: 30vh;
 	background-color: #021C2A; /*fallback color*/
 	background-image: linear-gradient(180deg, #010E15, #021C2A); 
+}
+#umass_logo {
+    margin: 20px 0 20px 0;
+    padding: 0;
+    width: 100%;
+}
+#footer .bin {
+    margin-top: 20px;
+    height: 200px;
+    background-image: linear-gradient(180deg, #010E15, #021C2A);
+    border: 2px solid #06466A;
+    border-radius: 5px;
 }
 
 
