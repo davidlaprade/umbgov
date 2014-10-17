@@ -8,6 +8,7 @@ body {
 
 #carousel-example-generic {
 	margin: 0;
+    margin-top: -20px;
 	padding: 0;
 }
 .carousel-inner img {
@@ -57,13 +58,16 @@ body {
 }
 
 .navbar-default .nav .dropdown-menu {
-	background-color: #82A2B4; /* contols background of dropdown menus */
+	background-color: #021C2A; /* contols background of dropdown menus */
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fec503;
+    color: #fec503; /*controls the text color of main nav buttons on hover */
+}
+.dropdown-menu li a:hover{
+    color: white;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -73,12 +77,12 @@ body {
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav>.active>a:focus { 
     color: #fff;
     background-color: #fec503;
 }
 
-.navbar-default .nav .dropdown-menu a:hover {
+.navbar-default .nav .dropdown-menu a:hover { /* contols the background highlight on hover for items in dropdown menu */
     background-image: none;
 	background-color: #82A2B4;
 }
@@ -94,8 +98,8 @@ body {
 	margin: 0;
     background-color: #06466A; /*fallback color*/
 	background-image: linear-gradient(180deg, #06466A, #04314A);
+    border-bottom: 2px solid #021C2A;
 }
-
 
 #logo {
 	-webkit-filter: contrast(200%);
@@ -104,22 +108,17 @@ body {
 }
 
 .navbar-default .navbar-brand {
-    font-family: 'Raleway', sans-serif;
+    font-family: TimesNewRoman;
     color: #fec503;
     font-size: 25px;
 }
-
 .navbar-nav li {
 	font-size: 12px; /*controls size of the menu icons*/
 }
 
-
-
-
-.sidebar-nav { /* ------------------------begin code for dropdown navbar items */
+.sidebar-nav { /* ------------------------begin code to make navbar items drop down on hover */
     padding: 9px 0;
 }
-
 .dropdown-menu .sub-menu {
     left: 100%;
     position: absolute;
@@ -127,19 +126,15 @@ body {
     visibility: hidden;
     margin-top: -1px;
 }
-
 .dropdown-menu li:hover .sub-menu {
     visibility: visible;
 }
-
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-
 .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
     margin-top: 0;
 }
-
 .navbar .sub-menu:before {
     border-bottom: 7px solid transparent;
     border-left: none;
@@ -158,20 +153,18 @@ body {
     left: -6px;
 } /* -----------------------------------------  end code for dropdown navbar menu on hover */
 
-
-
 @media(max-width:768px) {
+    body {
+        margin-top: 50px; /* to make room for the non-fixed navbar */
+    }
 	#logo {
-		height: 40px;
-		margin: 0;
+		height: 30px;
+		margin-top: 10px;
 	}
-
     .navbar-default {
-        padding: 10px 0;
+        padding: 0; /* controls height of navbars */
         border: 0;
 	    border-color: transparent;
-	    background-image: none;
-	    background-color: #06466A;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -183,28 +176,35 @@ body {
         -moz-transition: all .3s;
         transition: all .3s;
     }
-
     .navbar-default .navbar-nav>.active>a {
         border-radius: 0;
     }
-
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: #222;
     }
-
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
-
 	.navbar-default .nav .dropdown-menu {
-		background-color: white;
+		background-color: white; /* controls background color of dropdown menus */
 	}
 
 }/*///////////end navbar code///////////////////////////////////////////////////*/
 
+#announcements {
+    height: 400px;
+    background-color: white;
 
-
+}
+#link-side-bar{
+    color: white;
+    height: 400px;
+    background-color: #06466A;
+}
+#footer-links {
+    text-align: center;
+}
 #footer {
 	border-top: 2px solid white;
 	color: #06466A;
