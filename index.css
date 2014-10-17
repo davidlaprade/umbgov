@@ -12,6 +12,7 @@ body {
 	padding: 0;
 }
 .carousel-inner img {
+    width: 100%;
 	width: 100vw;
 	max-height: 500px;
 }
@@ -226,7 +227,6 @@ body {
 }
 #footer .bin {
     margin-top: 20px;
-    height: 200px;
     background-image: linear-gradient(180deg, #010E15, #021C2A);
     border: 2px solid #06466A;
     border-radius: 5px;
