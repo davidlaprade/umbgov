@@ -214,7 +214,7 @@ body {
     color: white;
     font-weight: bold;
 }
-#footer {
+#footer { /*begin footer styling-------------------------------------------------*/
 	border-top: 2px solid white;
 	color: #06466A;
 	background-color: #021C2A; /*fallback color*/
@@ -231,6 +231,26 @@ body {
     border: 2px solid #06466A;
     border-radius: 5px;
 }
+#footer .bin1 {
+    margin-right: 20px; /*so that the two bins aren't touching */
+}
+.bin-title {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 5%;
+}
+#social-media-icons {
+    padding-top: 5%;
+    margin: auto;
+    text-align: center; /*this and margin:auto ensure the icons are centered in the div */
+}
+#social-media-icons img {
+    width: 20%;
+}
+
 
 
 /*768px is the width of screens that bootstrap classifies as xs*/
@@ -241,6 +261,9 @@ body {
     #link-side-bar { /* hide side bar when screen is small */
         display: none;
     }
+    #footer div span {
+        font-size: 15px;
+    }
 }
 
 /*990px is the width of screens that bootstrap classifies as md*/
@@ -249,7 +272,6 @@ body {
 
 }
 
-/*UMass Boston blue: #06466A;*/
 
 * {
 	/*border: 2px dashed yellow;*/
