@@ -192,9 +192,8 @@
 				</div>
 			</div>
 
-			<div class="col-sm-3" id="link-side-bar">
-				Facebook posts will go here
-				<div class="fb-like-box" data-href="https://www.facebook.com/pages/Undergraduate-Student-Government/140289985982" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+			<div class="col-sm-3" id="facebook-side-bar">
+				<div class="fb-like-box" data-href="https://www.facebook.com/pages/Undergraduate-Student-Government/140289985982" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" style="background-color: white" data-show-border="true"></div>
 			</div>
 			<div class="col-xs-12" id="footer-links">
 				<a href="#">Link 1</a>|
@@ -210,7 +209,7 @@
 					<span class="bin-title">Get in Touch</span>
 					<div id="social-media-icons">
 						<a href="https://www.facebook.com/pages/Undergraduate-Student-Government/140289985982" target="_newtab" ><img class="grow" src="img/facebook-icon.png" /></a>
-						<a href="#" target="_newtab" ><img class="grow" src="img/linkedIn.png" /></a>
+						<a href="https://www.linkedin.com/company/166578?trk=vsrp_companies_res_name&trkInfo=VSRPsearchId%3A3484072691413836463127%2CVSRPtargetId%3A166578%2CVSRPcmpt%3Aprimary" target="_newtab" ><img class="grow" src="img/linkedIn.png" /></a>
 						<a href="https://twitter.com/UMB_USG" target="_newtab" ><img class="grow" src="img/twitter-icon.png" /></a>
 						<a href="#" target="_newtab" ><img class="grow" src="img/gmail_icon.png" /></a>
 					</div>
@@ -242,8 +241,6 @@
 			}
 		);
 
-		$('#link-side-bar').height($('#announcements').height()+20);
-
 		// makes the footer bin the same height as the Umass Boston logo
 		$('#footer .bin').css('min-height',$('#umass_logo').height());
 
@@ -258,6 +255,9 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
+
+		// makes sure the facebook-side-bar isn't shorter than the announcement section
+		$('#facebook-side-bar').css('min-height',$('#announcements').height()+20);
 
 	});
 
