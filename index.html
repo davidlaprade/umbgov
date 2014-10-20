@@ -261,6 +261,9 @@
 			// add 10 to leave a little padding beyond
 		$('#facebook-side-bar').css('min-height',$('#announcements').height()+20+10);
 
+		// modifies the facebook-side-bar data-width attribute dynamically
+		$('.fb-like-box').attr('data-width',$('#facebook-side-bar').width());
+
 	});
 
 
