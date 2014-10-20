@@ -31,7 +31,6 @@
 
 	<body>
 		
-			
 		<!-- Begin Navigation Bar code ///////////////////////////////////////////////////////////////////////////////////// -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- begin top navbar -->
 		  <div class="container-fluid">
@@ -89,6 +88,7 @@
 				    <li class="divider"></li>
 		            <li><a href="#">Constitution</a></li>
 		            <li><a href="#">Bylaws</a></li>
+		            <li><a href="#">Elections</a></li>
 		          </ul>
 		        </li>
        			<li class="dropdown">
@@ -100,7 +100,6 @@
 		            <li><a href="#">SAgroups</a></li>
 		          </ul>
 		        </li>
-		        <li><a href="#">Elections</a></li>
 		        <li><a href="#">Budget Requests</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right form-inline" id="form-hide" role="search">
@@ -166,25 +165,36 @@
 
 	<div class="container-fluid" id="home-content"> <!-- begin homepage content ///////////////////////////////////////////// -->
 		<div class="row">
-			<div class="col-xs-12 col-sm-10" id="announcements">
+			<div class="col-xs-12 col-sm-9" id="announcements">
 				<span id="announcement-section-title">USG News</span>
 				<div class="announcement-post">
-					<span class="announcement-post-title">Post1 Title</span>
-					<span class="announcement-post-date">Post1 Date</span>
-					<div class="announcement-post-content">Post1 Content</div>
-					<span class="announcement-post-author">Post1 Author</span>
+					<span class="announcement-post-title">Student Senate Special Elections</span>
+					<span class="announcement-post-date">Wednesday, September 3, 2014</span>
+					<br/>
+					<div class="announcement-post-content">
+						<p>The Student Senate has vacancies for the 2014-2015 academic year. If you are interested in running, then please go <a href="http://www.umb.edu/life_on_campus/student_involvement/activities/government/student_government_special_elections">here</a>.</p>
+						<p>Students must be matriculated, undergraduates in good academic and disciplinary standing and have a minimum 2.5 cumulative GPA.</p>
+						<p>Deadline to submit nominations is Friday, September 19th at midnight and elections will be Wednesday, September 24 at 3 pm in the CC Alumni Lounge (2nd floor). Students must have Wednesdays from 3-4 pm open to participate in Student Senate.</p>
+					</div>
+					<span class="announcement-post-author">Posted by Shelby Harris</span>
 				</div>
 				<div class="announcement-post">
-					<span class="announcement-post-title">Post2 Title</span>
-					<span class="announcement-post-date">Post2 Date</span>
-					<div class="announcement-post-content">Post2 Content</div>
-					<span class="announcement-post-author">Post2 Author</span>
+					<span class="announcement-post-title">Welcome Back!</span>
+					<span class="announcement-post-date">Friday, August 29th, 2014</span>
+					<br/>
+					<div class="announcement-post-content">
+						<p>The Undergraduate Student Government welcomes you back for another great academic year!</p>
+						<p>Returning clubs have until Friday, September 19 to complete training and reactivate.</p>
+						<p>New clubs applications are due by September 19 for fall activation. Go to https://umb.collegiatelink.net/ for more information.</p>
+						<p>Special Elections for vacant student senate seats will be Wednesday, September 24th at 3 pm in the Alumni Lounge. Online nomination forms will be available by Wednesday, September 3.</p>
+					</div>
+					<span class="announcement-post-author">Posted by Shelby Harris</span>
 				</div>
 			</div>
 
-			<div class="col-sm-2" id="link-side-bar">
-				This is where links and other miscellany will go<br/>Perhaps include tweets here
-				<!-- https://dev.twitter.com/web/embedded-timelines for how to AJAX a twitter feed -->
+			<div class="col-sm-3" id="link-side-bar">
+				Facebook posts will go here
+				<div class="fb-like-box" data-href="https://www.facebook.com/pages/Undergraduate-Student-Government/140289985982" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 			</div>
 			<div class="col-xs-12" id="footer-links">
 				<a href="#">Link 1</a>|
@@ -232,11 +242,22 @@
 			}
 		);
 
+		$('#link-side-bar').height($('#announcements').height()+20);
+
 		// makes the footer bin the same height as the Umass Boston logo
 		$('#footer .bin').css('min-height',$('#umass_logo').height());
 
 		// adds the twitter feed to the website, see https://dev.twitter.com/web/embedded-timelines
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+        // adds the facebook feed to the website, see https://developers.facebook.com/docs/plugins/like-box-for-pages/
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
 
 	});
 

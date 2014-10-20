@@ -218,18 +218,27 @@ body {
     font-family: Arial;
     font-weight: bold;
     font-size: 20px;
-    text-shadow: 1px 1px 5px gray;
+
     letter-spacing: 2px;
+}
+.announcement-post-title {
+    font-weight: bold;
 }
 .announcement-post {
     border-radius: 5px;
     border: 2px solid gray;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 5px;
 }
-
+.announcement-post-date {
+    float: right;
+}
+.announcement-post-author {
+    font-style: italic;
+}
 #link-side-bar{
     color: white;
+    height: fill;
     min-height: 300px;
     background-color: #06466A;
 }
