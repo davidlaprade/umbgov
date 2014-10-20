@@ -10,6 +10,7 @@ body {
 	margin: 0;
     margin-top: -20px;
 	padding: 0;
+    border-bottom: 2px solid #06466A;
 }
 .carousel-inner img {
     width: 100%;
@@ -116,6 +117,10 @@ body {
 .navbar-nav li {
 	font-size: 12px; /*controls size of the menu icons*/
 }
+.navbar-default .nav .dropdown-menu .sub-menu {
+    background-color: gray;
+}
+
 /*http://stackoverflow.com/questions/8878033/how-to-make-twitter-bootstrap-menu-dropdown-on-hover-rather-than-click*/
 .sidebar-nav { /* ------------------------begin code to make navbar items drop down on hover */
     padding: 9px 0;
@@ -192,29 +197,34 @@ body {
 
 }/*///////////end navbar code///////////////////////////////////////////////////*/
 
-#home-content {
-    position: relative;
-    top: 0%;
-    z-index: 1;
-}
 #announcements { /* --------------begin announcement styling-----------------*/
     background-color: white;
+    padding: 10px;
+    min-height: 300px;
+
 }
-#fade-bar {
-    position: relative;
-    z-index: 2;
-    top: 0%;
-    left: 0%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(255,255,255,0.0)));
-    height: 20px;
-    width: 100%;
+#announcement-section-title {
+    color: #06466A;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px gray;
+    letter-spacing: 2px;
 }
+.announcement-post {
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
 #link-side-bar{
     color: white;
     min-height: 300px;
     background-color: #06466A;
 }
 #footer-links {
+    border-top: 2px solid #06466A;
     text-align: center;
     padding: 5px 0 5px 0;
     background-color: gray;
@@ -241,6 +251,7 @@ body {
 }
 #footer .bin {
     margin-top: 20px;
+    padding: 10px;
     background-color: #021C2A;
     border: 2px solid #06466A;
     border-radius: 5px;
@@ -255,7 +266,6 @@ body {
     font-style: italic;
     font-size: 20px;
     margin-top: 30px;
-    padding-top: 5%;
 }
 #social-media-icons {
     padding-top: 5%;
