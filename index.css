@@ -5,18 +5,31 @@ body {
 	max-height: 100%;
 /*	background-color: gray;*/
 }
-
+#carousel-twitter {
+    padding: 0;
+    background-color: #333;
+    border-bottom: 2px solid #06466A;
+}
 #carousel-example-generic {
 	margin: 0;
     margin-top: -20px;
 	padding: 0;
-    border-bottom: 2px solid #06466A;
+
 }
 .carousel-inner img {
     width: 100%;
-	width: 100vw;
 	max-height: 500px;
 }
+#twitter-container {
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    margin-top: -20px;
+    max-height: 500px;
+    overflow: hidden;
+    height: 100%;
+}
+
 
 
 /*///////////////////// navbar styling ////////////////////////////////////////*/
