@@ -193,7 +193,7 @@
 			</div>
 
 			<div class="col-sm-3" id="facebook-side-bar">
-				<div class="fb-like-box" data-href="https://www.facebook.com/pages/Undergraduate-Student-Government/140289985982" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" style="background-color: white" data-show-border="true"></div>
+				<div class="fb-like-box" data-href="https://www.facebook.com/pages/Undergraduate-Student-Government/140289985982" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 			</div>
 			<div class="col-xs-12" id="footer-links">
 				<a href="#">Link 1</a>|
@@ -257,7 +257,9 @@
 		}(document, 'script', 'facebook-jssdk'));
 
 		// makes sure the facebook-side-bar isn't shorter than the announcement section
-		$('#facebook-side-bar').css('min-height',$('#announcements').height()+20);
+			// add 20 because the height of the announcement section doesn't include the height of its margins
+			// add 10 to leave a little padding beyond
+		$('#facebook-side-bar').css('min-height',$('#announcements').height()+20+10);
 
 	});
 

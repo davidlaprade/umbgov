@@ -239,6 +239,10 @@ body {
     height: fill;
     background-color: #06466A;
 }
+.fb-like-box {
+    background-color: white; 
+    width: 100%;
+}
 #footer-links {
     text-align: center;
     padding: 5px 0 5px 0;
