@@ -170,6 +170,12 @@
 					<span class="announcement-post-author">Post2 Author</span>
 				</div>
 			</div>
+			<!-- adds the twitter feed to the website, see https://dev.twitter.com/web/embedded-timelines -->
+			<a class="twitter-timeline"  href="https://twitter.com/UMB_USG" data-widget-id="524210238749044737">Tweets by @UMB_USG</a>
+
+          
+
+
 			<div class="col-sm-2" id="link-side-bar">
 				This is where links and other miscellany will go<br/>Perhaps include tweets here
 				<!-- https://dev.twitter.com/web/embedded-timelines for how to AJAX a twitter feed -->
@@ -222,6 +228,9 @@
 
 		// makes the footer bin the same height as the Umass Boston logo
 		$('#footer .bin').css('min-height',$('#umass_logo').height());
+
+		// adds the twitter feed to the website, see https://dev.twitter.com/web/embedded-timelines
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
 	});
 

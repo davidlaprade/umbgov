@@ -62,7 +62,9 @@ body {
 .navbar-default .nav .dropdown-menu {
 	background-color: #021C2A; /* contols background of dropdown menus */
 }
-
+.navbar-default .nav .dropdown-menu .sub-menu {
+    background-color: gray; /* contols background of dropdown sub-menus */
+}
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
@@ -71,24 +73,20 @@ body {
 .dropdown-menu li a:hover{
     color: white;
 }
-
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
     background-color: #06466A;
 }
-
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus { 
     color: #fff;
     background-color: #fec503;
 }
-
 .navbar-default .nav .dropdown-menu a:hover { /* contols the background highlight on hover for items in dropdown menu */
     background-image: none;
 	background-color: #82A2B4;
 }
-
 .navbar-default{ /* for the second navbar */
     padding: 5px 0; /* controlls the navbar height */
     border-color: transparent;
@@ -117,10 +115,6 @@ body {
 .navbar-nav li {
 	font-size: 12px; /*controls size of the menu icons*/
 }
-.navbar-default .nav .dropdown-menu .sub-menu {
-    background-color: gray;
-}
-
 /*http://stackoverflow.com/questions/8878033/how-to-make-twitter-bootstrap-menu-dropdown-on-hover-rather-than-click*/
 .sidebar-nav { /* ------------------------begin code to make navbar items drop down on hover */
     padding: 9px 0;
