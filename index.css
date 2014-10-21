@@ -168,6 +168,11 @@ body {
     top: 11px;
     left: -6px;
 } /* -----------------------------------------  end code for dropdown navbar menu on hover */
+@media(max-width:990px) {
+    .navbar-nav li {
+        font-size: 9px; /*controls size of the menu icons*/
+    }
+}
 
 @media(max-width:768px) {
     body {
